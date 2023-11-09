@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- This makes the webpage repsonsive- it resizes when the brower changes scale -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The title in the browser will be this -->
+    <title>CV- Amelia G</title>
+
+    <style>
+        /* When the text is highlighted this is what the highlighted code will look like */
+        ::selection {
+            color: black;
+            background: #68abd4;
+        }
+
+        /* This changes the font family to Times New Roman */
+        .text {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* The page will have no margin and the font here is changed */
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        /* Styles the box sizing */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Styles the navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #2F435A;
+        }
+
+        /* Styles the navigation bar headers */
+        .topnav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        /* Styles the navigation bar when the user hovers over it */
+        .topnav a:hover {
+            background-color: rgb(59, 87, 119);
+            color: rgb(255, 255, 255);
+        }
+
+        /* Styles the footer */
+        footer {
+            width: 100%;
+            color: white;
+            text-align: left;
+            background-color: #2F435A;
+            font-size: 12px;
+            padding-top: 20px;
+
+        }
+
+        /* Styles the page title */
+        h1 {
+            color: #2F435A;
+            font-size: 35px;
+            text-align: center;
+            margin: auto;
+        }
+
+        /* Styles the intro to the page */
+        .content {
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            color: black;
+
+        }
+
+        /* Styles the title of each separate box content */
+        h3 {
+            color: #2F435A;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        /* Styles the grouped box contents */
+        h4 {
+            color: #2F435A;
+            font-size: 15px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        /* Styles the content of the boxes */
+        p {
+            color: black;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        /* Styles the width of the boxes */
+        .column2 {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+
+        /* Sets the margin for the boxes */
+        .row2 {
+            margin: 0 -5px;
+        }
+
+        /* Clears the space after the boxes */
+        .row2:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Styles the boxes */
+        .card2 {
+            box-shadow: 0 4px 8px 0 #eea9cc;
+            padding: 5px;
+            text-align: center;
+            background-color: white;
+            margin: auto;
+            height: 50%;
+        }
+
+        /* Styles the logo */
+        .center {
+            display: block;
+            margin: auto;
+            width: 50%;
+        }
+
+        /* Styles the boxes when a user hovers over them */
+        .card2:hover {
+            box-shadow: 0 8px 16px 0 #eea9cc;
+        }
+
+        /* Styles the icons when the user hovers over them */
+        .icons:hover {
+            opacity: 0.5;
+        }
+
+        /*Styles the heade*/
+        header {
+            font-size: 60px;
+            color: #2F435A;
+            padding: 30px;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <html>
+    <br>
+    <header><b>CV- Amelia Goldsby</b></header>
+
+
+
+
+    <!-- Note: The navigation bar headers use inline implementation to acheive another way of implementation -->
+    <div class="topnav">
+        <strong>
+            <!-- Links headers to pages -->
+            <a href="Education.html" style="float:right; color:white;">Education</a>
+            <a href="Experience.html" style="float:right; color:white;">Experience</a>
+            <a href="SelectedAchievements.html" style="float:right; color:white;">Achievements</a>
+            <a href="Form.html" style="float:right; color:white;">Form</a>
+
+            <!-- Uses a house icon to link to the home page -->
+            <a href="CVHome.html">
+                <img src="homeLogo.png" alt="Home Page Link" style="width:35px;height:35px;  float: right;">
+            </a>
+        </strong>
+    </div>
+    <br>
+
+    <h1>Education</h1>
+    <br>
+    <br>
+    <!-- Creates a 'card' with an image on top, using inline implementation, and content underneath -->
+    <div class="row2">
+        <div class="column2">
+            <div class="card2">
+                <a href="https://www.qa.com/">
+                    <img class="icons" src="QALogo.jpg" alt="QA Logo Link" style="width:50%; height: 100%;">
+                </a>
+                <h3>Level 6 Degree in Digital Technology and Solutions</h3>
+                <p>Achieved 68.5% in the Level 4 (first year) section of my degree. I am currently completing this degree as part of my Degree Apprenticeship in Aviva</p>
+                <h4>QA Apprenticeships
+                    University of Roehampton
+                </h4>
+            </div>
+        </div>
+    </div>
+    <!-- Creates a 'card' with an image on top, using inline implementation, and content underneath -->
+    <div class="row2">
+        <div class="column2">
+            <div class="card2">
+                <a href="https://cwa.ac.uk/">
+                    <img class="icons" src="CWALogo.jpg" alt="CWA Logo Link" style="width:50%; height: 100%;">
+                </a>
+                <h3>BTEC in computing</h3>
+                <p>Achieved D*D*D* in an RQF BTEC National Extended Diploma in Computing whilst covid restrictions were
+                    being changed, meaning a mixed study environment.</p>
+                <h4>College of West Anglia
+                    Kings Lynn, Norfolk
+                </h4>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Creates a 'card' with an image on top, using inline implementation, and content underneath -->
+    <div class="row2">
+        <div class="column2">
+            <div class="card2">
+                <a href="https://www.bcs.org/">
+                    <img class="icons" src="bcsLogo.jpg" alt="BCS Logo Link" style="width:50%; height: 100%;">
+                </a>
+                <h3>BCS Level 2 Certificate in Computing User Skills</h3>
+                <p>Passed this BCS Course in High School as an additional course, to benefit my skills in my future job.
+                </p>
+                <h4>Litcham High School
+                    Kings Lynn, Norfolk
+                </h4>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- Creates a 'card' with an image on top, using inline implementation, and content underneath -->
+    <div class="row2">
+        <div class="column2">
+            <div class="card2">
+                <a href="https://www.litchamschool.org.uk/">
+                    <img class="icons" src="LHLogo.jpg" alt="Litcham High School Logo Link"
+                        style="width:50%; height: 100%;">
+                </a>
+                <h3>GCSEs</h3>
+                <p>Achieved a 9 in Computer Science and Geography alongside 8s in Biology, Maths, English Literature and
+                    Language, 7s in Chemistry, PE and Statistics, a 6 in Physics and B in Further Maths.</p>
+                <h4>Litcham High School
+                    Kings Lynn, Norfolk
+                </h4>
+            </div>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+
+
+        <footer>
+            <!-- Links icons to their social media sites with inline implementation styling the copyright content -->
+            <h5 style="float:left; font-size: 20px; padding-left: 10px;"> Amelia Goldsby's CV Page. (Created on an Aviva
+                Foundry Course- 2023)</h5>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </footer>
+</body>
+
+</html>

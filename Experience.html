@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- This makes the webpage repsonsive- it resizes when the brower changes scale -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The title in the browser will be this -->
+    <title>CV- Amelia G</title>
+
+    <style>
+        /* When the text is highlighted this is what the highlighted code will look like */
+        ::selection {
+            color: black;
+            background: #68abd4;
+        }
+
+        /* This changes the font family to Times New Roman */
+        .text {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* The page will have no margin and the font here is changed */
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        /* Styles the box sizing */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Styles the navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #2F435A;
+        }
+
+        /* Styles the navigation bar headers */
+        .topnav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        /* Styles the navigation bar when the user hovers over it */
+        .topnav a:hover {
+            background-color: rgb(59, 87, 119);
+            color: rgb(255, 255, 255);
+        }
+
+        /* Styles the footer */
+        footer {
+            width: 100%;
+            color: white;
+            text-align: left;
+            background-color: #2F435A;
+            font-size: 12px;
+            padding-top: 20px;
+
+        }
+
+        /* Styles the page title */
+        h1 {
+            color: #2F435A;
+            font-size: 35px;
+            text-align: center;
+            margin: auto;
+        }
+
+        /* Styles the intro to the page */
+        .content {
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            color: black;
+
+        }
+
+        /* Styles the title of each separate box content */
+        h3 {
+            color: #2F435A;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        /* Styles the grouped box contents */
+        h4 {
+            color: #2F435A;
+            font-size: 25px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        /* Styles the content of the boxes */
+        p {
+            color: black;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        /* Styles the width of the boxes */
+        .column2 {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+
+        /* Sets the margin for the boxes */
+        .row2 {
+            margin: 0 -5px;
+        }
+
+        /* Clears the space after the boxes */
+        .row2:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Styles the boxes */
+        .card2 {
+            box-shadow: 0 4px 8px 0 #eea9cc;
+            padding: 5px;
+            text-align: center;
+            background-color: white;
+            margin: auto;
+            height: 50%;
+        }
+
+        /* Styles the logo */
+        .center {
+            display: block;
+            margin: auto;
+            width: 50%;
+        }
+
+        /* Styles the boxes when a user hovers over them */
+        .card2:hover {
+            box-shadow: 0 8px 16px 0 #eea9cc;
+        }
+
+        /* Styles the icons when the user hovers over them */
+        .icons:hover {
+            opacity: 0.5;
+        }
+
+        /*Styles the heade*/
+        header {
+            font-size: 60px;
+            color: #2F435A;
+            padding: 30px;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <html>
+    <br>
+    <header><b>CV- Amelia Goldsby</b></header>
+
+
+
+
+    <!-- Note: The navigation bar headers use inline implementation to acheive another way of implementation -->
+    <div class="topnav">
+        <strong>
+            <!-- Links headers to pages -->
+            <a href="Education.html" style="float:right; color:white;">Education</a>
+            <a href="Experience.html" style="float:right; color:white;">Experience</a>
+            <a href="SelectedAchievements.html" style="float:right; color:white;">Achievements</a>
+            <a href="Form.html" style="float:right; color:white;">Form</a>
+
+            <!-- Uses a house icon to link to the home page -->
+            <a href="CVHome.html">
+                <img src="homeLogo.png" alt="Home Page Link" style="width:35px;height:35px;  float: right;">
+            </a>
+        </strong>
+    </div>
+    <br>
+
+    <h1>Experience</h1>
+    <p>
+        As a current Apprentice Software Engineer I have attended mutiple training courses including the ICP Agile
+        Training course and AWS Cloud Practiconer, inlcuding completing the exam. Currently based in the App Development
+        team (Digital), within Aviva, I am using React as my main coding language, in which I have completed the
+        required training days. Studying alongside my job, requires good time management and organisation skills to not
+        fall behind and miss deadlines.
+    </p>
+    <br>
+    <br>
+    <!-- Creates a 'card' with an image on top, using inline implementation, and content underneath -->
+    <div class="row2">
+        <div class="column2">
+            <div class="card2">
+                <a href="https://www.aviva.co.uk/">
+                    <img class="icons" src="aviva.jpg" alt="Aviva's Logo Link" style="width:50%; height: 100%;">
+                </a>
+                <h3>September 2022 to Date</h3>
+                <p>Apprentice Software Engineer • App Development (Digital Team) • Aviva</p>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+    <!-- Creates a 'card' with an image on top, using inline implementation, and content underneath -->
+    <div class="row2">
+        <div class="column2">
+            <div class="card2">
+                <a href="https://www.glavencaring.co.uk/">
+                    <img class="icons" src="TheGlavenLogo.jpg" alt="The Glaven Logo Link"
+                        style="width:50%; height: 100%;">
+                </a>
+                <h3>November 2022 to Date</h3>
+                <p>Volunteer • The Glaven Community Care Centre</p>
+
+            </div>
+        </div>
+        <!-- Creates a 'card' with an image on top, using inline implementation, and content underneath -->
+        <div class="column2">
+            <div class="card2">
+                <a href="https://www.nnvs.co.uk/">
+                    <img class="icons" src="NNVS.jpg" alt="NNVS Logo Link" style="width:50%; height: 100%;">
+                </a>
+                <h3>2020 to 2022</h3>
+                <p>Intern • Social Media Management • North Norfolk Vehicle Solutions </p>
+
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- Creates a 'card' with an image on top, using inline implementation, and content underneath -->
+    <div class="row2">
+        <div class="column2">
+            <div class="card2">
+                <a href="https://www.thursford.com/">
+                    <img class="icons" src="ThursfordLogo.jpg" alt="Thursford Logo Link"
+                        style="width:50%; height: 100%;">
+                </a>
+                <h3>September 2021 to January 2021</h3>
+                <p>Customer Asssitant • Christmas Staff • Thursford Spectacular</p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+    <footer>
+        <!-- Links icons to their social media sites with inline implementation styling the copyright content -->
+        <h5 style="float:left; font-size: 20px; padding-left: 10px;"> Amelia Goldsby's CV Page. (Created on an Aviva
+            Foundry Course- 2023)</h5>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- This makes the webpage repsonsive- it resizes when the brower changes scale -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The title in the browser will be this -->
+    <title>CV- Amelia G</title>
+
+    <style>
+        /* When the text is highlighted this is what the highlighted code will look like */
+        ::selection {
+            color: black;
+            background: #68abd4;
+        }
+
+        /* This changes the font family to Times New Roman */
+        .text {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* The page will have no margin and the font here is changed */
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        /* Styles the box sizing */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Styles the navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #2F435A;
+        }
+
+        /* Styles the navigation bar headers */
+        .topnav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        /* Styles the navigation bar when the user hovers over it */
+        .topnav a:hover {
+            background-color: rgb(59, 87, 119);
+            color: rgb(255, 255, 255);
+        }
+
+        /* Styles the footer */
+        footer {
+            width: 100%;
+            color: white;
+            text-align: left;
+            background-color: #2F435A;
+            font-size: 12px;
+            padding-top: 20px;
+
+        }
+
+        /* Styles the page title */
+        h1 {
+            color: #2F435A;
+            font-size: 35px;
+            text-align: center;
+            margin: auto;
+        }
+
+        /* Styles the intro to the page */
+        .content {
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            color: black;
+
+        }
+
+        /* Styles the title of each separate box content */
+        h3 {
+            color: #2F435A;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        /* Styles the grouped box contents */
+        h4 {
+            color: #2F435A;
+            font-size: 25px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        /* Styles the content of the boxes */
+        p {
+            color: black;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        /* Styles the width of the boxes */
+        .column2 {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+
+        /* Sets the margin for the boxes */
+        .row2 {
+            margin: 0 -5px;
+        }
+
+        /* Clears the space after the boxes */
+        .row2:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Styles the boxes */
+        .card2 {
+            box-shadow: 0 4px 8px 0 #eea9cc;
+            padding: 5px;
+            text-align: center;
+            background-color: white;
+            margin: auto;
+            height: 50%;
+        }
+
+        /* Styles the logo */
+        .center {
+            display: block;
+            margin: auto;
+            width: 50%;
+        }
+
+        /* Styles the boxes when a user hovers over them */
+        .card2:hover {
+            box-shadow: 0 8px 16px 0 #eea9cc;
+        }
+
+        /* Styles the icons when the user hovers over them */
+        .icons:hover {
+            opacity: 0.5;
+        }
+
+        /*Styles the heade*/
+        header {
+            font-size: 60px;
+            color: #2F435A;
+            padding: 30px;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <html>
+    <br>
+    <header><b>CV- Amelia Goldsby</b></header>
+
+
+
+
+    <!-- Note: The navigation bar headers use inline implementation to acheive another way of implementation -->
+    <div class="topnav">
+        <strong>
+            <!-- Links headers to pages -->
+            <a href="Education.html" style="float:right; color:white;">Education</a>
+            <a href="Experience.html" style="float:right; color:white;">Experience</a>
+            <a href="SelectedAchievements.html" style="float:right; color:white;">Achievements</a>
+            <a href="Form.html" style="float:right; color:white;">Form</a>
+
+            <!-- Uses a house icon to link to the home page -->
+            <a href="CVHome.html">
+                <img src="homeLogo.png" alt="Home Page Link" style="width:35px;height:35px;  float: right;">
+            </a>
+        </strong>
+    </div>
+    <br>
+
+    <h1>Achievements and Relevant skills</h1>
+    <br>
+    <br>
+    <!-- Creates a 'card' with an image on top, using inline implementation, and content underneath -->
+    <div class="row2">
+        <div class="column2">
+            <div class="card2">
+                <img class="icons" src="CodingLangs.jpg" alt="Coding Languages Image" style="width:50%; height: 100%;">
+                <p>Strong Python skills with experience in C Sharp, C++, Appian BPM/RPA, SQL, and React.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Creates a 'card' with an image on top, using inline implementation, and content underneath -->
+    <div class="row2">
+        <div class="column2">
+            <div class="card2">
+                <img class="icons" src="retroImage.jpg" alt="Retrospective Meeting Image"
+                    style="width:50%; height: 100%;">
+                <p>Held multiple Retrospective meetings in my team in Aviva, and received positive feedback including
+                    that I was a “natural” and “confident” whilst having “patience” with the team to help facilitate
+                    major changes into becoming more efficient.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Creates a 'card' with an image on top, using inline implementation, and content underneath -->
+    <div class="row2">
+        <div class="column2">
+            <div class="card2">
+                <img class="icons" src="NorfolkLogo.jpg" alt="Norfolk  Image" style="width:50%; height: 100%;">
+                <p>Norfolk County Scholar Certificate received for my College Grades. More information on this award can
+                    be found <a
+                        href="https://www.norfolk.gov.uk/education-and-learning/adult-learning/information-for-learners/get-involved/learner-awards">here</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Creates a 'card' with an image on top, using inline implementation, and content underneath -->
+    <div class="row2">
+        <div class="column2">
+            <div class="card2">
+                <img class="icons" src="uniHat.jpg" alt="Uni Hat Image" style="width:50%; height: 100%;">
+                <p>Achieved two unconditional offers for university courses and 3 other conditional offers including a
+                    MSci and MCompu, all being in relation to Computer Science</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Creates a 'card' with an image on top, using inline implementation, and content underneath -->
+    <div class="row2">
+        <div class="column2">
+            <div class="card2">
+                <img class="icons" src="brilliantClubLogo.jpg" alt="Brilliant Club Image"
+                    style="width:50%; height: 100%;">
+                <p>Selected for Brilliant Club in High School.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Creates a 'card' with an image on top, using inline implementation, and content underneath -->
+    <div class="row2">
+        <div class="column2">
+            <div class="card2">
+                <img class="icons" src="keySkillsLogo.jpg" alt="Key Skills Image" style="width:50%; height: 100%;">
+                <h3>Key skills</h3>
+                <p>Communication
+                    <br>Time Management
+                    <br>Professionalism
+                    <br>Problem-Solving
+                    <br>Organisation
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+
+
+    <br>
+    <br>
+    <br>
+
+
+    <footer>
+        <!-- Links icons to their social media sites with inline implementation styling the copyright content -->
+        <h5 style="float:left; font-size: 20px; padding-left: 10px;"> Amelia Goldsby's CV Page. (Created on an Aviva
+            Foundry Course- 2023)</h5>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </footer>
+</body>
+
+</html>

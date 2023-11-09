@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Note: This page uses external implementation -->
+
+
+    <!-- This makes the webpage repsonsive- it resizes when the brower changes scale -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The title in the browser will be this -->
+    <title>CV- Amelia G</title>
+
+
+    <style>
+        /* When the text is highlighted this is what the highlighted code will look like */
+        ::selection {
+            color: black;
+            background: #39918C;
+        }
+
+        /* This changes the font family to Times New Roman */
+        .text {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* The page will have no margin and the font here is changed */
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        /* Styles the box sizing */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Styles the navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #2F435A;
+        }
+
+        /* Styles the headers in the navigation bar */
+        .topnav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        /* Styles the navigation bar when the user hovers over it */
+        .topnav a:hover {
+            background-color: rgb(59, 87, 119);
+            color: rgb(255, 255, 255);
+        }
+
+
+
+        /* Styles the footer */
+        footer {
+            width: 100%;
+            color: white;
+            text-align: center;
+            background-color: #2F435A;
+            font-size: 12px;
+            padding-top: 20px;
+        }
+
+        /* Styles the page title */
+        h1 {
+            color: #2F435A;
+            font-size: 35px;
+            text-align: center;
+            margin: auto;
+        }
+
+        /* Styles the input text area */
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #2F435A;
+            border-radius: 4px;
+            resize: vertical;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        /* Styles the labels */
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+            color: white;
+        }
+
+        /* Styles the submit button */
+        button {
+            width: 100%;
+            background-color: #8fe095;
+            color: white;
+            font-size: medium;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: auto;
+            border: none;
+        }
+
+        /* Styles the button when the user hovers over it */
+        button:hover {
+            background-color: #329d2e;
+        }
+
+        /* Styles the application */
+        .application {
+            border-radius: 5px;
+            background-color: #f2c1da;
+            padding: 20px;
+        }
+
+        /* Styles the label columns */
+        .first_col {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        /* Styles the columns with the inputs */
+        .second_col {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        /* Clears space after each row */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Allows the form to be viewed in different sized media screens */
+        @media screen and (max-width: 600px) {
+
+            .first_col,
+            .second_col,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+
+        /* Styles intro to page */
+        p {
+            color: black;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        /* Styles the logo */
+        .center {
+            display: block;
+            margin: auto;
+            width: 50%;
+        }
+
+        /* Styles the icons when the user hovers over them */
+        .icons:hover {
+            opacity: 0.5;
+        }
+
+        /*Styles the heade*/
+        header {
+            font-size: 60px;
+            color: #2F435A;
+            padding: 30px;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+
+
+<body>
+    <html>
+
+    <br>
+    <!-- Links the logo to the home page -->
+    <!-- Links the logo to the home page -->
+    <header><b>CV- Amelia Goldsby</b></header>
+
+
+
+    <!-- Note: The navigation bar headers use inline implementation to acheive another way of implementation -->
+    <div class="topnav">
+        <strong>
+            <!-- Links headers to pages -->
+            <a href="Education.html" style="float:right; color:white;">Education</a>
+            <a href="Experience.html" style="float:right; color:white;">Experience</a>
+            <a href="SelectedAchievements.html" style="float:right; color:white;">Achievements</a>
+            <a href="Form.html" style="float:right; color:white;">Form</a>
+            <!-- Uses a house icon to link to the home page -->
+            <a href="CVHome.html">
+                <img src="homeLogo.png" alt="Home Page Link" style="width:35px;height:35px;  float: right;">
+            </a>
+        </strong>
+    </div>
+    <br>
+    <h1>Feedback</h1>
+
+
+
+
+    <p>If you wish to provide feedback on my website or have any reccommendations for courses I should take, please fill
+        out the form below.</p>
+    <br>
+
+    <!-- Note this is the application form -->
+    <form name="forms">
+        <!-- This class allows the css to customise it -->
+        <div class="application">
+            <div class="row">
+                <!-- Label for the user input area -->
+                <div class="first_col">
+                    <label for="first_name"><b>First Name</b></label>
+                </div>
+                <!-- Area for the user to input data from their keyboard -->
+                <div class="second_col">
+                    <!-- States the input type- allowing the user to use their own data -->
+                    <input type="text" id="first_name" name="first_name" placeholder="Enter your first name...">
+                </div>
+            </div>
+            <div class="row">
+                <!-- Label for the user input area -->
+                <div class="first_col">
+                    <label for="last_name"><b>Last Name</b> </label>
+                </div>
+                <!-- Area for the user to input data from their keyboard -->
+                <div class="second_col">
+                    <!-- States the input type- allowing the user to use their own data -->
+                    <input type="text" id="last_name" name="last_name" placeholder="Enter your last name...">
+                </div>
+            </div>
+            <div class="row">
+                <!-- Label for the user input area -->
+                <div class="first_col">
+                    <label for="email"><b>Email</b></label>
+                </div>
+                <!-- Area for the user to input data from their keyboard -->
+                <div class="second_col">
+                    <!-- States the input type- allowing the user to use their own data -->
+                    <input type="text" id="email" name="email" placeholder="Enter your email...">
+                </div>
+            </div>
+            <div class="row">
+                <!-- Label for the user input area -->
+                <div class="first_col">
+                    <label for="user"><b>Any Reccommendations for Courses?</b></label>
+                </div>
+                <!-- Area for the user to input data from their keyboard -->
+                <div class="second_col">
+                    <!-- States the input type and area type (it will be a larger area)- allowing the user to use their own data -->
+                    <textarea id="reccommendations" name="reccommendations"
+                        placeholder="Please provide reccommendations for courses to further progress my learning..."
+                        style="height:250px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Label for the user input area -->
+                <div class="first_col">
+                    <label for="first_name"><b>Feedback On Website</b></label>
+                </div>
+                <!-- Area for the user to input data from their keyboard -->
+                <div class="second_col">
+                    <!-- States the input type- allowing the user to use their own data -->
+                    <textarea id="feedback" name="feedback" placeholder="Please provide feedback on my wesbite..."
+                        style="height:250px"></textarea>
+                </div>
+            </div>
+
+
+        </div>
+    </form>
+    <br>
+
+    <!-- The button tags create a button -->
+    <!-- The myFunction() java function will also be called when the button is clicked -->
+    <button onclick="myFunction()"><b>Submit</b></button>
+
+
+    <!-- The following code is JavaScript which allows interactivity on a website -->
+    <script>
+
+        //The function which is called when the button is clicked
+        function myFunction() {
+            var first_name, last_name, email, job, live, qual, user; //assigns the data type to variable for all of the listed names
+
+            // the code here calls the values in the brackets from the form, in the html, and stores it in the java
+            first_name = document.getElementById("first_name").value;
+            last_name = document.getElementById("last_name").value;
+            email = document.getElementById("email").value;
+            job = document.getElementById("reccommendations").value;
+            home = document.getElementById("feedback").value;
+
+
+            //an IF statement to test wether there is an empty field
+            if (first_name == "" || last_name == "" || email == "" || reccommendations == "" || feedback == "" || qual == "Default3" || user == "") { //if a field is empty or set to default
+
+                alert("Not all fields are filled in") //creates an alert on the browser screen
+
+            } else { //if all fields are filled in
+
+                alert("Your application has been submitted and you will hear from us soon- Thank You!") //creates an alert on the browser screen
+            }
+
+        }
+    </script>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <!-- Links icons to their social media sites with inline implementation styling the copyright content -->
+        <h5 style="float:left; font-size: 20px; padding-left: 10px;"> Amelia Goldsby's CV Page. (Created on an Aviva
+            Foundry Course- 2023)</h5>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </footer>
+
+</body>
+
+</html>

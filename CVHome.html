@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Note: This page will use internal implementation to help show the use of all of the different ways of implementation. -->
+
+    <!-- This makes the webpage repsonsive- it resizes when the brower changes scale -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The title in the browser will be this -->
+    <title>CV- Amelia G</title>
+
+
+    <style>
+        /* When the text is highlighted this is what the highlighted code will look like */
+        ::selection {
+            color: black;
+            background: #68abd4;
+        }
+
+        /* This changes the font family to Times New Roman */
+        .text {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        /* The page will have no margin and the font here is changed */
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        /* Styles the box sizing */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Styles the logo */
+        .center {
+            display: block;
+            margin: auto;
+            width: 50%;
+        }
+
+        /* Changes the backgorunf colour of the navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #2F435A;
+
+        }
+
+        /* Styles the navigation bar */
+        .topnav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        /* Styles the navigation bar for when the user's cursor hovers over it */
+        .topnav a:hover {
+            background-color: rgb(59, 87, 119);
+            color: rgb(255, 255, 255);
+        }
+
+
+        /* Styles the content paragraph */
+        .content {
+            background-color: white;
+            width: 80%;
+            border: 5px solid #D0B49F;
+            padding: 50px;
+            margin: auto;
+            text-align: center;
+            color: #2F435A;
+        }
+
+        /* Creates a box for the content and makes it centered */
+        .column {
+            padding: 10px;
+            width: 60%;
+            margin: auto;
+        }
+
+        /* Styles margin of the content */
+        .row {
+            margin: 0 -5px;
+        }
+
+        /* Clears the page after the content box */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Styles the content box */
+        .card {
+            box-shadow: 0 4px 8px 0 #eea9cc;
+            padding: 15px;
+            text-align: center;
+            background-color: white;
+        }
+
+        /* Styles the footer */
+        footer {
+            width: 100%;
+            color: white;
+            text-align: left;
+            background-color: #2F435A;
+            font-size: 12px;
+            padding-top: 20px;
+        }
+
+        /* Styles the content */
+        p {
+            color: black;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        /* Styles the icons for when the user hovers over them */
+        .icons:hover {
+            opacity: 0.5;
+        }
+
+        /* Styles the content box for when the user hovers over them */
+        .card:hover {
+            box-shadow: 0 8px 16px #eea9cc;
+        }
+
+        /*Styles the header*/
+        header {
+            font-size: 60px;
+            color: #2F435A;
+            padding: 30px;
+            text-align: center;
+            margin: auto;
+        }
+
+        /*Styles the header in the boxes*/
+        h1 {
+            color: #2F435A;
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <html>
+    <br>
+    <!-- Links the logo to the home page -->
+    <header><b>CV- Amelia Goldsby</b></header>
+
+
+
+
+    <!-- Note: The navigation bar headers use inline implementation to acheive another way of implementation -->
+    <div class="topnav">
+        <strong>
+            <!-- Links headers to pages -->
+            <a href="Education.html" style="float:right; color:white;">Education</a>
+            <a href="Experience.html" style="float:right; color:white;">Experience</a>
+            <a href="SelectedAchievements.html" style="float:right; color:white;">Achievements</a>
+            <a href="Form.html" style="float:right; color:white;">Form</a>
+
+
+
+
+            <!-- Uses a house icon to link to the home page -->
+            <a href="CVHome.html">
+                <img src="homeLogo.png" alt="Home Page Link" style="width:35px;height:35px;  float: right;">
+            </a>
+        </strong>
+    </div>
+    <br>
+
+    <br>
+    <br>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img class="icons" src="PicOfMyself.jpg" alt="Image of Myself" style="width:50%; height: 120%;">
+                <!-- Note: inline implementation -->
+                <h1 style="font-size: 25px; text-align: center;"><b>About Me</b></h1>
+                <p style="font-size:20px;"> As a young woman in the technology industry as a Software Engineer, I strive
+                    to achieve as much as
+                    I can in terms of a career in computing, as well as setting myself high objectives and goals. I am
+                    keen to gain experience and new skills as well as developing my existing abilities to achieve my
+                    ambitions. In finding a new opportunity I look to fully utilise my skills to help me develop new
+                    capabilities to provide the job satisfaction and development opportunities I desire.
+                    <br>
+                </p>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <!-- Note: inline implementation -->
+                <h1 style="font-size: 25px; text-align: center;"><b>Contact Details</b></h1>
+                <p style="font-size:20px;"> 46 Langham Road, Blakeney, Holt, NR25 7PJ
+                    <br>
+                    <a href="tel:07789767891">07789767891</a>
+                    <br>
+                    <a href="mailto: amelia.goldsby@gmail.com">amelia.goldsby@gmail.com</a>
+
+                    <br>
+                <p style="text-align:center;"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2403.8731317363986!2d1.0112697000000035!3d52.95070580000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d76e08ae1e9405%3A0xb754258af6249d40!2s46%20Langham%20Rd%2C%20Blakeney%2C%20Holt%20NR25%207PJ!5e0!3m2!1sen!2suk!4v1699530094969!5m2!1sen!2suk"
+                        width="100%" height="60%" style="border:0;" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">" width="800" height="400" style="border:0;"
+                        allowfullscreen="" loading="lazy"></iframe></p>
+
+                </p>
+                <br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Here this code adds a map to my home page, sourced from Google Maps -->
+
+    <footer>
+        <!-- Links icons to their social media sites with inline implementation styling the copyright content -->
+        <h5 style="float:left; font-size: 20px; padding-left: 10px;"> Amelia Goldsby's CV Page. (Created on an Aviva
+            Foundry Course- 2023)</h5>
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
